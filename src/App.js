@@ -1,8 +1,9 @@
 
 import {
   View,
-  Text,
 } from 'react-native'
+
+import Text from './components/Text'
 
 const App = ()=> {
 
@@ -13,7 +14,17 @@ const App = ()=> {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <Text style={{ fontSize: 32 }}>folo.info</Text>
+      <View>
+        <Text size='lg'>folo.info</Text>
+      </View>
+      <View style={{
+        margin: 30,
+      }}>
+        <Text size='sm' color='#777'>List of things</Text>
+        <Text link href='https://keywordcounter.folo.info'>
+          Keyword Counter
+        </Text>
+      </View>
     </View>
   )
 
