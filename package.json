@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "curl -X POST -d {} 'https://webhooks.amplify.ap-northeast-1.amazonaws.com/prod/webhooks?id=874af921-e28a-4c31-aeb0-59c3e64e562e&token=tXJP48cFImYGVwQ5dKlN6XLihU16qMwrAAkPfriAA&amp;operation=startbuild' -H 'Content-Type:application/json'"
   },
   "eslintConfig": {
     "extends": [
