@@ -9,6 +9,7 @@ const Text = props => {
     children,
     size,
     link,
+    style,
     ...rest
   } = props
 
@@ -29,7 +30,11 @@ const Text = props => {
 
   return (
     <NativeText
-      style={{ color, fontSize, }}
+      style={{
+        color,
+        fontSize,
+        ...style
+      }}
       accessibilityRole={accessibilityRole}
       {...rest}
     >
