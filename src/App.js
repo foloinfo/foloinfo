@@ -20,14 +20,13 @@ const App = ()=> {
       <View style={{
         margin: 30,
       }}>
-        <Text size='sm' color='#777'>List of things</Text>
 
         <Text link href='https://blog.folo.info' style={{marginBottom: '0.5rem'}}>
           Blog
         </Text>
 
-        <Text link href='https://keywordcounter.folo.info'>
-          Keyword Counter
+        <Text link href='https://github.com/foloinfo' style={{marginBottom: '0.5rem'}}>
+          Github
         </Text>
 
       </View>
